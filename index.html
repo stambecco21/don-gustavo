@@ -1,144 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <title>Landing Page Contatti</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #2e7d32, #a5d6a7);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 500px;
-      background: #ffffff;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      padding: 32px;
-      display: grid;
-      gap: 24px;
-    }
-
-    h1 {
-      font-size: 30px;
-      margin: 0 0 8px;
-      text-align: center;
-    }
-
-    p {
-      text-align: center;
-      margin: 0 0 20px;
-      color: #555;
-    }
-
-    form {
-      display: grid;
-      gap: 16px;
-    }
-
-    label {
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    input {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-
-    button {
-      margin-top: 8px;
-      padding: 14px;
-      border-radius: 12px;
-      border: none;
-      background: #2e7d32;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .success {
-      display: none;
-      text-align: center;
-      color: #2e7d32;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don Gustavo Olijfolie</title>
 </head>
 <body>
-  <div class="container">
-    <div>
-      <h1>Registrazione Contatti</h1>
-      <p>Inserisci i tuoi dati. Verranno salvati automaticamente su Google Sheets.</p>
+  <h1>Benvenuto su Don Gustavo Food and Nutrition</h1>
 
-      <!-- ✅ COLLEGA QUI L'URL DEL TUO GOOGLE APPS SCRIPT -->
-      <form id="contactForm" action="INSERISCI_QUI_IL_TUO_WEB_APP_URL" method="POST">
-        <div>
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" required />
-        </div>
-
-        <div>
-          <label for="cognome">Cognome</label>
-          <input type="text" id="cognome" name="cognome" required />
-        </div>
-
-        <div>
-          <label for="indirizzo">Indirizzo</label>
-          <input type="text" id="indirizzo" name="indirizzo" required />
-        </div>
-
-        <div>
-          <label for="telefono">Telefono</label>
-          <input type="tel" id="telefono" name="telefono" required />
-        </div>
-
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-
-        <button type="submit">Invia</button>
-      </form>
-
-      <div class="success" id="successMessage">
-        ✅ Dati inviati correttamente!
-      </div>
-    </div>
+  <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+       padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+       margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+       border-radius: 8px; will-change: transform;">
+    <iframe loading="lazy"
+      style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+      src="https://www.canva.com/design/DAG6yA2-cIY/_zcN1nvkU6Fy9UxUi7yFDA/view?embed"
+      allowfullscreen="allowfullscreen" allow="fullscreen">
+    </iframe>
   </div>
 
-  <script>
-    const form = document.getElementById("contactForm");
-    const successMessage = document.getElementById("successMessage");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const data = new FormData(form);
-
-      fetch(form.action, {
-        method: "POST",
-        body: data
-      })
-      .then(() => {
-        form.reset();
-        successMessage.style.display = "block";
-        setTimeout(() => successMessage.style.display = "none", 4000);
-      })
-      .catch(() => alert("Errore nell'invio dei dati"));
-    });
-  </script>
+  <p>
+    <a href="https://www.canva.com/design/DAG6yA2-cIY/_zcN1nvkU6Fy9UxUi7yFDA/view?utm_content=DAG6yA2-cIY&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">
+      Don Gustavo Food and Nutrition
+    </a>
+  </p>
 </body>
 </html>
